@@ -1,3 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #EEE;
+  background: #333;
+}
+
+header #title {
+  text-align: center;
+  transform: translate(4rem);
+  margin: 1rem;
+}
+
+header #title h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+header #title h1 {
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header #title h1::before {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 2rem;
+  background: #EEE;
+  position: absolute;
+  top: 50%;
+  transform: translate(calc(-100% - 0.5rem), -50%);
+}
+
+header #title h1::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 2rem;
+  background: #EEE;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(calc(100% + 0.5rem), -50%);
+}
+
+nav {
+  flex-flow: row nowrap;
+  margin: 0 2rem;
+}
+
+nav a {
+  color: #EEE;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+main section {
+  min-height: 800px;
+  padding: 20px 15px;
+  margin-bottom: 25px 0;
+  display: block;
+  scroll-margin-top: 5.5rem;
+  scroll-snap-align: start;
+  scroll-padding-top: 6em;
+}
+
+main section:nth-child(even) {
+  background: #8cffd9;
+}
+
+main section:nth-child(odd) {
+  background: #8cc2ff;
+}
+
 footer {
   text-align: center;
   padding: 5px;
