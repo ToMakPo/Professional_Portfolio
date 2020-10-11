@@ -17,7 +17,7 @@ Create a professional portfolio exhibiting samples of my deployed projects that 
     - When the image is clicked, the user should be taken to the deployed application.
 - The display of the protfolio should be a responsive layout and adjust dynamicly depending on the screen size. 
 
-## PROJECT
+## ⚔️ PROJECT
 Here is a [link to the live project](https://tomakpo.github.io/UWCB-HW02-Professional_Portfolio/).
 
 ## 🤟🏻 ATTRIBUTIONS
