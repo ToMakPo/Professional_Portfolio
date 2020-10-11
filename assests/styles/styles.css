@@ -73,31 +73,33 @@ nav a {
   color: #EEE;
   text-decoration: none;
   padding: 1rem 1.5rem;
+  border-radius: 5px;
+}
+
+nav a:focus, nav a:hover {
+  outline: none;
+  background: #404040;
+}
+
+nav a:active, nav a.active {
+  background: #4d4d4d;
 }
 
 main {
-  scroll-snap-type: y mandatory;
+  background: #DEE;
 }
 
 main section {
-  min-height: 800px;
+  display: inline-block;
   padding: 20px 15px;
-  margin-bottom: 25px 0;
-  display: block;
-  scroll-margin-top: 5.5rem;
-  scroll-snap-align: start;
-  scroll-padding-top: 6em;
-}
-
-main section:nth-child(even) {
-  background: #8cffd9;
-}
-
-main section:nth-child(odd) {
-  background: #8cc2ff;
+  margin-bottom: 25px;
+  width: 100%;
+  min-height: 100px;
 }
 
 footer {
   text-align: center;
   padding: 5px;
+  color: #EEE;
+  background: #333;
 }

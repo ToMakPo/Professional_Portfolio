@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./assests/styles/monitor.css" media="screen and (min-width:992px)">
     <link rel="stylesheet" href="./assests/styles/tablet.css" media="screen and (max-width:992px) and (min-width:625px)">
     <link rel="stylesheet" href="./assests/styles/mobile.css" media="screen and (max-width:625px)">
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assests/js/nav.js"></script>
+
 </head>
 <body>
     <header>
@@ -21,15 +26,15 @@
         </span>
 
         <nav>
-            <a href="#about-section">About Me</a>
-            <a href="#work-section">My Work</a>
-            <a href="#contact-section">Contact Me</a>
-            <a href="#resume-section">Resume</a>
+            <a href="#about-section" class="active" onclick="make_active(this)">About Me</a>
+            <a href="#work-section" onclick="make_active(this)">My Work</a>
+            <a href="#contact-section" onclick="make_active(this)">Contact Me</a>
+            <a href="#resume-section" onclick="make_active(this)">Resume</a>
         </nav>
     </header>
     <hr>
     <main>
-        <section id="about-section">
+        <section id="about-section" class="active">
             <h2>About Me</h2>
         </section>
 
@@ -51,4 +56,7 @@
         <sup>&copy; 2020</sup>
     </footer>
 </body>
+<script>
+    $(document).ready(set_scroll_offset)
+</script>
 </html>
