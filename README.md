@@ -4,7 +4,7 @@ Homework assignment for **week 2** of _UW Coding Bootcamp_.
 ## 	🎯 GOAL
 Create a professional portfolio exhibiting samples of my deployed projects that can show my skills to potential employers.
 
-## 📝 TASKS
+## ✅ TASKS
 - The portfolio must display:
     - developer's name
     - recent photo
