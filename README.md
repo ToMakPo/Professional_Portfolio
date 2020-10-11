@@ -16,3 +16,8 @@ Create a professional portfolio exhibiting samples of my deployed projects that 
     - The image for the developer's first application should be larger in size then the rest of the others.
     - When the image is clicked, the user should be taken to the deployed application.
 - The display of the protfolio should be a responsive layout and adjust dynamicly depending on the screen size. 
+
+## 🤟🏻 ATTRIBUTIONS
+### Fonts
+- [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) - used in the header
+- [Dancing Script](https://fonts.google.com/specimen/Dancing+Script) - used in the header
