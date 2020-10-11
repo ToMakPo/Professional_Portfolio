@@ -97,6 +97,12 @@ main section {
   min-height: 100px;
 }
 
+main #contact-section #contact-phone::before {
+  content: "xxx";
+  display: inline-block;
+  background-image: url(./asse);
+}
+
 footer {
   text-align: center;
   padding: 5px;
