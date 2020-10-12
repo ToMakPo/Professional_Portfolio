@@ -24,3 +24,8 @@ Here is a [link to the live project](https://tomakpo.github.io/UWCB-HW02-Profess
 ### Fonts
 - [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) - used in the header
 - [Dancing Script](https://fonts.google.com/specimen/Dancing+Script) - used in the header
+- [Quicksand](https://fonts.google.com/specimen/Quicksand) - used for the body
+
+### Icons
+ - Phone and email icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+ - Github and LinkedIn icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

@@ -92,15 +92,83 @@ main {
 main section {
   display: inline-block;
   padding: 20px 15px;
-  margin-bottom: 25px;
   width: 100%;
-  min-height: 100px;
+  min-height: 10px;
 }
 
-main #contact-section #contact-phone::before {
-  content: "xxx";
+main #about-section > div {
+  display: flex;
+}
+
+main #about-section > div #profile-image {
+  flex: 0 0 auto;
+  background-image: url("../images/profile.jpg");
+  background-size: contain;
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 8px #476b6b, inset 0 0 10px 8px #476b6b;
+}
+
+main #about-section > div #profile-text {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+main #about-section > div #profile-text p:not(:first-child) {
+  margin-top: 0.75rem;
+}
+
+main #contact-section div {
+  display: flex;
+  justify-content: space-around;
+  max-width: 922px;
+  margin: 0 auto;
+  padding-left: 24px;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+main #contact-section div a {
+  color: #667;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 10px 25px;
+  position: relative;
+}
+
+main #contact-section div a::before {
+  content: "";
+  background-size: contain;
   display: inline-block;
-  background-image: url(./asse);
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(calc(-24px - 5px), -50%);
+}
+
+main #contact-section div #contact-phone::before {
+  background-image: url("../images/phone.svg");
+}
+
+main #contact-section div #contact-email::before {
+  background-image: url(../images/email.svg);
+}
+
+main #contact-section div #contact-github::before {
+  background-image: url(../images/github.svg);
+}
+
+main #contact-section div #contact-linkedin::before {
+  background-image: url(../images/linkedin.svg);
+}
+
+main #contact-section div #contact-stackoverflow::before {
+  background-image: url(../images/stackoverflow.svg);
 }
 
 footer {
