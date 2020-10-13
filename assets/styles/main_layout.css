@@ -11,6 +11,12 @@ body {
 
 body > * {
     flex: 0 0 auto;
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    z-index: 999;
 }
 
 main {

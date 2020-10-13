@@ -27,3 +27,7 @@ input, select, option, optgroup, textarea, button, pre, code {
 ol, ul {
   list-style: none;
 }
+
+.hidden {
+  display: none !important;
+}

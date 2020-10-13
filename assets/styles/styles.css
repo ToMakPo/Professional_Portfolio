@@ -20,6 +20,7 @@ header {
   right: 0;
   color: #EEE;
   background: #333;
+  box-shadow: 0 0 5px 5px #333;
 }
 
 header #title {
@@ -91,9 +92,14 @@ main {
 
 main section {
   display: inline-block;
-  padding: 20px 15px;
+  padding: 1rem 0.75rem;
   width: 100%;
   min-height: 10px;
+}
+
+main section > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 main #about-section > div {
@@ -105,11 +111,11 @@ main #about-section > div #profile-image {
   background-image: url("../images/profile.jpg");
   background-size: contain;
   display: block;
-  width: 20rem;
-  height: 20rem;
+  min-width: 20rem;
+  min-height: 20rem;
   border-radius: 50%;
-  margin: 10px;
-  box-shadow: 0px 0px 10px 8px #476b6b, inset 0 0 10px 8px #476b6b;
+  margin: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.3rem #476b6b, inset 0 0 0.5rem 0.3rem #476b6b;
 }
 
 main #about-section > div #profile-text {
@@ -119,6 +125,135 @@ main #about-section > div #profile-text {
 
 main #about-section > div #profile-text p:not(:first-child) {
   margin-top: 0.75rem;
+}
+
+main #work-section #cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main #work-section #cards .project-card {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: calc(33.33% - 0.5rem);
+  min-height: 150px;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+  background-size: cover;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 0.15rem 0.15rem #66666633;
+}
+
+main #work-section #cards .project-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  display: block;
+  position: absolute;
+  filter: saturate(50%) blur(1px);
+}
+
+main #work-section #cards .project-card:hover img, main #work-section #cards .project-card:focus img {
+  filter: saturate(100%) blur(0px);
+}
+
+main #work-section #cards .project-card:focus {
+  outline: none;
+}
+
+main #work-section #cards .project-card:active {
+  outline: none;
+  box-shadow: 0 0 0.15rem 0.2rem #33333366;
+}
+
+main #work-section #cards .project-card:first-child {
+  width: calc(66.66% - 0.5rem);
+}
+
+main #work-section #cards .project-card div {
+  padding: 0.5rem 0;
+  margin: 0.75rem 0 0.35rem;
+  width: 100%;
+}
+
+main #work-section #cards .project-card div > * {
+  border-radius: 0 0.35rem 0.35rem 0;
+  background-color: #333;
+  opacity: 0.85;
+}
+
+main #work-section #cards .project-card div > span {
+  display: inline-block;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+main #work-section #cards .project-card div > span h2 {
+  color: #EEE;
+  font-size: 1.5rem;
+}
+
+main #work-section #cards .project-card div > span em {
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: #EEE;
+  margin-left: 1rem;
+}
+
+main #work-section #cards .project-card div > span em span:not(:first-child)::before {
+  content: ' / ';
+}
+
+main #work-section #cards .project-card div p {
+  display: inline-block;
+  color: #EEE;
+  max-width: 90%;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+}
+
+main #work-section #skills {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  font-family: monospace;
+}
+
+main #work-section #skills::before {
+  content: "SKILLS: ";
+}
+
+main #work-section #skills > span:not(#clear_filters) {
+  margin: 0 0.15rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #cccccc;
+  color: #555555;
+  cursor: pointer;
+}
+
+main #work-section #skills > span:not(#clear_filters).highlighted {
+  background-color: #999999;
+  color: #eeeeee;
+}
+
+main #work-section #skills > span:not(#clear_filters):hover, main #work-section #skills > span:not(#clear_filters):focus {
+  outline: none;
+  background-color: gray;
+  color: #eeeeee;
+}
+
+main #work-section #skills > span:not(#clear_filters):active {
+  background-color: #666666;
+}
+
+main #work-section #skills #clear_filters {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.665rem;
+  color: #555555;
+  cursor: pointer;
 }
 
 main #contact-section div {
@@ -137,6 +272,17 @@ main #contact-section div a {
   text-decoration: none;
   margin: 10px 25px;
   position: relative;
+  padding: 0.35rem;
+  border-radius: 0.35rem;
+}
+
+main #contact-section div a:hover, main #contact-section div a:focus {
+  outline: none;
+  background-color: #99cccc;
+}
+
+main #contact-section div a:active {
+  background-color: #aad5d5;
 }
 
 main #contact-section div a::before {
